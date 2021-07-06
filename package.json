@@ -7,9 +7,13 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "vue": "^3.0.5"
+    "ant-design-vue": "^2.2.1",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.10"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@types/node": "^16.0.0",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",

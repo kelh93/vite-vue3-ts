@@ -9,6 +9,7 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     'airbnb-base',
     'plugin:prettier/recommended',
+    'plugin:import/typescript',
   ],
   parserOptions: {
     ecmaVersion: 12,
@@ -16,6 +17,15 @@ module.exports = {
   },
   plugins: ['vue', '@typescript-eslint'],
   rules: {
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        vue: 'never',
+        ts: 'never',
+      },
+    ],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
 };
